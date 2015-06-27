@@ -12,8 +12,12 @@ authors = ["Patrick Tran <patrick.tran06@gmail.com>",
 [dependencies]
 rustc-serialize = "*"
 plugin = "*"
-persistent = "*"
 
 [dependencies.iron]
-version = "*"
+git = "https://github.com/AerialX/iron.git"
+branch = "feat/hyper-0.6"
+default-features = false
+
+[dependencies.persistent]
+git = "https://github.com/AerialX/persistent.git"
 default-features = false
